@@ -69,3 +69,6 @@ cor(weight,bmi)
 
 model<-lm(bmi~weight)
 summary.lm(model)
+
+##BMI = intercept+weight*weight(25)
+  11.364 + 0.343*25
