@@ -30,7 +30,7 @@ p2
 round(1000*p2)
 
 #(iii) atmost 2 defectives
-p3 = sum(dpois(0:2,lamda))
+p3 = sum(dpois(0:2,lamda)) ##ppois(2,lamda)
 p3
 
 #(iii) for 1000 boxes
