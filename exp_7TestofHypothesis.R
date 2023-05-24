@@ -41,3 +41,39 @@ pval
 
 #conclusion
 if(pval>alpha){print("Accept Null hypothesis")} else{print("Reject Null Hypothesis")}
+
+
+
+##Test of Hypothesis - Large Sample Proportion Test
+
+##Problem:The fatality rate of patients is believed to be 17.26% .In a certain year 640 patients suffering from typhoid were treated in a metropolitan hospital and only 63 patiets died.Can you consider the hospital efficient
+#Input the data
+#Size of the sample
+n = 640
+n
+
+#Sample proportion
+Sprop = 63/n
+Sprop
+
+#Population proportion
+Pprop = 0.1726
+Pprop
+
+#Probability of failure
+Q = 1-Pprop
+Q
+
+#test statistic
+z = (Sprop-Pprop)/sqrt((Pprop*Q)/n)
+z
+
+#critical value
+E = qnorm(.975) #(1-alpha/2)
+E
+#Boundries
+c(-E,E)
+
+#Conclusion
+if(z>-E && z<E){print("Hospital is not efficient")} else{print("Hospital is Efficient")}
+
